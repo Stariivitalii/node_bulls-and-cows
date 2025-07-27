@@ -1,7 +1,6 @@
 'use strict';
 
-import readline from 'readline';
-
+const readline = require('readline');
 const { generateRandomNumber } = require('./modules/generateRandomNumber');
 const { checkIsValidUserInput } = require('./modules/checkIsValidUserInput');
 const { getBullsAndCows } = require('./modules/getBullsAndCows');
@@ -26,7 +25,7 @@ terminal.question(
         userWrited,
       );
     } else {
-      terminal.close('You win!');
+      terminal.close();
     }
   },
 );
